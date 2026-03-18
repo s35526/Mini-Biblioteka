@@ -1,8 +1,9 @@
 public class Ksiazka {
-    private String tytul; ("1", "2", "3")
-    private String autor; ("Sienkiewicz", "Prus", "Orwell")
-    private int liczbaStron; ("900", "700", "300")
-    private boolean dostepna; (true, false, true)
+    private String tytul;
+    private String autor;
+    private int liczbaStron;
+    private boolean dostepna;
+
     public Ksiazka(String tytul, String autor, int liczbaStron, boolean dostepna) {
 
         this.tytul = tytul;
