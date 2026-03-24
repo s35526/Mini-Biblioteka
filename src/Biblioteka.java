@@ -50,5 +50,34 @@ public void wypiszDostepneKsiazki() {
         }
         return dostepne;
     }
+
+
+public void wypozyczKsiazke(String tytul, Czytelnik czytelnik) {
+    for (int i = 0; i < liczbaKsiazek; i++) {
+        if (ksiazki[i].getTytul().equals(tytul)) {
+            if (ksiazki[i].isDostepna()) {
+                ksiazki[i].wypozycz();
+                czytelnik.zwiekszLiczbeWypozyczen();
+                System.out.println(czytelnik.getImie() + " wypożyczył/a książkę: " + tytul);
+            } else {
+                System.out.println("Książka '" + tytul + "' jest niedostępna.");
+            }
+            return;
+        }
+    }
+    System.out.println("Nie znaleziono książki: " + tytul);
+}
+
+public void zwrocKsiazke(String tytul, Czytelnik czytelnik) {
+    for (int i = 0; i < liczbaKsiazek; i++) {
+        if (ksiazki[i].getTytul().equals(tytul)) {
+            ksiazki[i].zwroc();
+            czytelnik.zmniejszLiczbeWypozyczen();
+            System.out.println(czytelnik.getImie() + " zwrócił/a książkę: " + tytul);
+            return;
+        }
+    }
+    System.out.println("Nie znaleziono książki: " + tytul);
+
 }
 
