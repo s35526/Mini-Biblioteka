@@ -5,3 +5,5 @@ Książka - reprezentuje książki
 Czytelnik - reprezentuje czytelników
 Biblioteka - przechowuje tablice książek 
 Main - prezentuje cały program
+
+---W trakcie robienia zadania wszystko nadpisałem z plików na komputerze dlatego commity są dopiero od 2 zadania. 1 zadanie zrobiłem na zajęciach.
