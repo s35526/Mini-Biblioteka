@@ -28,4 +28,7 @@ public class Czytelnik {
             System.out.println("Czytelnik" + imie + " nie ma aktualnie wypożyczonych książek.");
         }
     }
+    public String getImie() {
+        return imie;
+    }
 }

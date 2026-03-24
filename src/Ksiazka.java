@@ -29,4 +29,7 @@ public class Ksiazka {
             System.out.println("Zwrócono książkę: " + tytul)
         }
     }
+    public String getTytul() {
+        return tytul;
+    }
 }
