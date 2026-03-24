@@ -11,4 +11,12 @@ k1.wypisz.Info();
 k1.zwroc();
 
     }
+Czytelnik c1 = new Czytelnik("Jan", "Nowak", 1000, 0);
+Czytelnik c2= new Czytelnik("Asia", "Bąk", 2000, 2);
+
+c1.wypiszDane();
+c1.zwiekszLiczbeWypozyczen();
+
+c2.wypiszDane();
+c2.zmiejszLiczbeWypozyczen();
 }
