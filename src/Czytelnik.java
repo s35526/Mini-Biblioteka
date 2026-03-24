@@ -1,4 +1,4 @@
-publc class Czytelnik {
+public class Czytelnik {
     private String imie;
     private String nazwisko;
     private int NumerKarty;
